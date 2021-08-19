@@ -67,6 +67,11 @@ function showWeatherReport(weather){
         icon.setAttribute('src', 'http://openweathermap.org/img/wn/10d@2x.png')
     }
 
+    else if(weatherType.textContent == "Drizzle"){
+        document.body.style.backgroundImage = "url('./weather-images/rain.jpg')"
+        icon.setAttribute('src', 'http://openweathermap.org/img/wn/10d@2x.png')
+    }
+
     else if(weatherType.textContent == "Mist"){
         document.body.style.backgroundImage = "url('./weather-images/haze.jpg')"
         icon.setAttribute('src', 'http://openweathermap.org/img/wn/50d@2x.png')
